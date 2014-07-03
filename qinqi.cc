@@ -92,6 +92,5 @@ void speak_relation(int rank, int rel)
         case 5: cout<<"你说着就说出他儿子卖屁眼的消息把他气死了"; break;
     }
     
-//    appear_relation(rank, rel);
     cout<<endl<<"真是皆大欢喜！！";
 }
