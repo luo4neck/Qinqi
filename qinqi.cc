@@ -32,8 +32,17 @@ int main()
 
 void appear_relation(int rank, int rel)
 {
-    if( rank == 1) cout<<"大";
-    else cout<<rank;
+    switch(rank)
+    {
+        case 1: cout<<"大"; break; 
+        case 2: cout<<"二"; break; 
+        case 3: cout<<"三"; break; 
+        case 4: cout<<"四"; break; 
+        case 5: cout<<"五"; break; 
+        case 6: cout<<"六"; break; 
+        case 7: cout<<"七"; break; 
+        case 8: cout<<"八"; break; 
+    }
    
     switch(rel)
     {
@@ -70,6 +79,8 @@ void speak_relation(int rank, int rel)
     char ans[100];
     cin>>ans;
     
+    appear_relation(rank, rel);
+    cout<<"说：";
     switch(sen)
     {
         case 0: cout<<"我儿子一个月挣一万呢！"<<endl; break;
@@ -77,7 +88,7 @@ void speak_relation(int rank, int rel)
         case 2: cout<<"我给你介绍一个基佬吧！"<<endl; break;
         case 3: cout<<"我女儿男朋友是银行经理呢！"<<endl; break;
         case 4: cout<<"我儿子刚买了标志307！"<<endl; break;
-        case 5: cout<<"要早点办酒席啊！现在酒席不好订啊！我女儿结婚的时候就在天上人间呢！"<<endl; break;
+        case 5: cout<<"要早点办酒席啊！现在酒席不好订啊！我女儿结婚的时候就在南馆呢！"<<endl; break;
     }
     
     cout<<"你说："<<endl;
