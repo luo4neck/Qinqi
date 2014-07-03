@@ -34,17 +34,19 @@ void appear_relation(int rank, int rel)
 {
     if( rank == 1) cout<<"大";
     else cout<<rank;
-    
-    
-    if (rel == 0) cout<<"伯";
-    else if(rel == 1) cout<<"叔";
-    else if(rel == 2) cout<<"姑";
-    else if(rel == 3) cout<<"姨";
-    else if(rel == 4) cout<<"舅";
-    else if(rel == 5) cout<<"表哥";
-    else if(rel == 6) cout<<"表嫂";
-    else if(rel == 7) cout<<"表姐";
-    else if(rel == 8) cout<<"表姐夫";
+   
+    switch(rel)
+    {
+        case 0: cout<<"伯"; break; 
+        case 1: cout<<"叔"; break; 
+        case 2: cout<<"姑"; break; 
+        case 3: cout<<"姨"; break; 
+        case 4: cout<<"舅"; break; 
+        case 5: cout<<"表哥"; break; 
+        case 6: cout<<"表嫂"; break; 
+        case 7: cout<<"表姐"; break; 
+        case 8: cout<<"表姐夫"; break; 
+    }
 }
 
 void speak_relation(int rank, int rel)
